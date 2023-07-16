@@ -22,11 +22,16 @@ h1{
   .list {
     display: flex;
     flex-direction: row;
-    color: rgb(209, 139, 8);
+   
    margin: 30px;
     gap: 30px;
-    list-style: none;
-    justify-content: center;
+      justify-content: center;
+    cursor: pointer;
+  }
+  .list button{
+    border: none;
+    color: rgb(209, 139, 8);
+    background: none;
     cursor: pointer;
   }
  

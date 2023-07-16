@@ -87,20 +87,20 @@ function App() {
   }
 
   return (
-    <div className="menu">
+    <div id="main">
       <h1>Our Menu</h1>
       <hr id="me" />
-      <section>
-        <ul className="list">
-          <li onClick={() => setItems(filterItemsByCategory("all"))}>All</li>
-          <li onClick={() => setItems(filterItemsByCategory("breakfast"))}>
+      <section
+         className="list" >
+            <button>All</button>
+          <button id="filter-btn-1" onClick={() => setItems(filterItemsByCategory("breakfast"))}>
             Breakfast
-          </li>
-          <li onClick={() => setItems(filterItemsByCategory("lunch"))}>Lunch</li>
-          <li onClick={() => setItems(filterItemsByCategory("shakes"))}>
+          </button>
+          <button id="filter-btn-2" onClick={() => setItems(filterItemsByCategory("lunch"))}>Lunch</button>
+          <button id="filter-btn-3" onClick={() => setItems(filterItemsByCategory("shakes"))}>
             Shakes
-          </li>
-        </ul>
+          </button>
+       
       </section>
       <div className="items">
                <Dishes items={items} />
