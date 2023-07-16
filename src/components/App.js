@@ -93,11 +93,11 @@ function App() {
       <section
          className="list" >
             <button>All</button>
-          <button id="filter-btn-1" onClick={() => setItems(filterItemsByCategory("breakfast"))}>
+          <button id="filter-btn-1" data-test-id="menu-item-breakfast" onClick={() => setItems(filterItemsByCategory("breakfast"))}>
             Breakfast
           </button>
-          <button id="filter-btn-2" onClick={() => setItems(filterItemsByCategory("lunch"))}>Lunch</button>
-          <button id="filter-btn-3" onClick={() => setItems(filterItemsByCategory("shakes"))}>
+          <button id="filter-btn-2" data-test-id="menu-item-lunch" onClick={() => setItems(filterItemsByCategory("lunch"))}>Lunch</button>
+          <button id="filter-btn-3" data-test-id="menu-item-breakfast" onClick={() => setItems(filterItemsByCategory("shakes"))}>
             Shakes
           </button>
        
